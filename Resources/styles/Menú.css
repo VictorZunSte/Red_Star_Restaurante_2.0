@@ -1,0 +1,112 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: red;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+}
+
+.encabezado{
+    display: flex;
+    align-items: center;
+    background-color: black;
+    position: relative;
+}
+
+.encabezado > h1, .encabezado > h2{
+    position: absolute;
+    color: white;
+    top: 20%;
+    left: 10%;
+}
+
+.encabezado > h2 {
+    position: absolute;
+    top: 45%; 
+}
+
+.encabezado > .logo{
+    margin: 0 auto;
+    height: 200px;
+    width: 200px;
+}
+
+.navegacion{
+    margin: 0;
+    background-color: aqua;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+ul li{
+    background-color: rgb(116, 4, 4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 25px;
+    font-size: 20px;
+    border-radius: 20px;
+}
+
+li > a{
+    text-decoration: none;
+    color: white;
+}
+
+ul > li > a:hover{
+    text-decoration: underline black;
+}
+
+.titulo > h1, .titulo > h2{
+    width: 100%;
+    text-align: center;
+}
+
+.titulo > h1{
+    margin-bottom: 0;
+}
+
+.titulo > h2{
+    margin-top: 0;
+}
+
+.menu {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.fila {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    align-items: flex-end;
+}
+
+.plato {
+    width: 30%;
+    text-align: center;
+}
+
+.plato img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    transition: transform 0.3s;
+    z-index: 0;
+    position: relative;
+}
+
+.plato img:hover {
+    transform: scale(2);
+    z-index: 1;
+}
