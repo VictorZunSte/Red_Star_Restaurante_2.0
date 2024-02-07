@@ -93,8 +93,8 @@ article {
     display: flex;
     overflow: hidden; 
     position: relative;
-    width: 256px; 
-    height: 256px; 
+    width: 30%; 
+    border-radius: 5px;
 }
 
 .imagenesFuera img, .imagenesDentro img {
